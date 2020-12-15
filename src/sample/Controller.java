@@ -1,11 +1,20 @@
 package sample;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class Controller {
 
@@ -27,7 +36,19 @@ public class Controller {
     @FXML
     void initialize() {
        loginBtn.setOnAction(actionEvent -> {
-           System.out.println("Hello");
+           loginBtn.getScene().getWindow().hide();
+           FXMLLoader loader = new FXMLLoader();
+           loader.setLocation(getClass().getResource("/view/home.fxml"));
+
+           try {
+               loader.load();
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+           Parent root = loader.getRoot();
+           Stage stage = new Stage();
+           stage.setScene(new Scene(root));
+           stage.showAndWait();
        });
     }
 }
