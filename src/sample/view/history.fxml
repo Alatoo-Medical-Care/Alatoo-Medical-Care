@@ -17,7 +17,7 @@
             <children>
                 <AnchorPane prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">
                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handlerHome" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
                             <image>
                                 <Image url="@../image/baseline_home_white_48dp.png" />
                             </image>
@@ -26,7 +26,7 @@
                 </AnchorPane>
                 <AnchorPane layoutY="120.0" prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">
                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handlerHistory" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
                             <image>
                                 <Image url="@../image/baseline_history_white_48dp2.png" />
                             </image>
@@ -35,7 +35,7 @@
                 </AnchorPane>
                 <AnchorPane layoutY="240.0" prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">
                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handlerPatient" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
                             <image>
                                 <Image url="@../image/baseline_add_task_white_48dp2.png" />
                             </image>
@@ -44,7 +44,7 @@
                 </AnchorPane>
                 <AnchorPane layoutY="360.0" prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">
                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handlerUpcoming" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
                             <image>
                                 <Image url="@../image/baseline_notification_important_white_48dp2.png" />
                             </image>

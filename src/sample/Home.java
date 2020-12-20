@@ -2,9 +2,11 @@ package sample;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -52,22 +54,18 @@ public class Home {
 
     @FXML
     void handleHistory(MouseEvent event) {
-        /*
-        historyImg.getScene().getWindow().hide();
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/sample/view/history.fxml"));
-
+        Parent root;
         try {
-            loader.load();
-        } catch (IOException e) {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/history.fxml")), resources);
+            Stage stage = new Stage();
+            stage.setTitle("History");
+            stage.setScene(new Scene(root));
+            stage.show();
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
-        Parent root = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.showAndWait();
-
-         */
 
     }
 
@@ -78,19 +76,40 @@ public class Home {
 
     @FXML
     void handlePatient(MouseEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/add_patient.fxml")), resources);
+            Stage stage = new Stage();
+            stage.setTitle("Add Patient");
+            stage.setScene(new Scene(root));
+            stage.show();
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     void handleUpcoming(MouseEvent event) {
+        Parent root;
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/upcoming.fxml")), resources);
+            Stage stage = new Stage();
+            stage.setTitle("Upcoming");
+            stage.setScene(new Scene(root));
+            stage.show();
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     void initialize() {
-        historyImg.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> {
-            historyImg.setOpacity(0.5);
-        });
+
     }
 }
-
