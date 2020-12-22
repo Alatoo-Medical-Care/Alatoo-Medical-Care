@@ -19,11 +19,7 @@
          <children>
             <AnchorPane prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">
                <children>
-                  <ImageView fx:id="homeImg" fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handleHome" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;">
-                     <image>
-                        <Image url="@../image/baseline_home_white_48dp2.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="homeImg" fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handleHome" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" />
                </children>
             </AnchorPane>
             <AnchorPane layoutY="120.0" prefHeight="120.0" prefWidth="135.0" style="-fx-border-color: #000000;">

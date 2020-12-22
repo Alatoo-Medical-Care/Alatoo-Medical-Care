@@ -10,6 +10,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -110,6 +111,7 @@ public class Home {
 
     @FXML
     void initialize() {
+        //homeImg =  new ImageView(new Image(getClass().getResourceAsStream("image/baseline_add_task_white_48dp2.png")));
 
     }
 }

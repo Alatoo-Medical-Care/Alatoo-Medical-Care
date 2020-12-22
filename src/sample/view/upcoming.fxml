@@ -19,7 +19,7 @@
                     <children>
                         <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="17.0" layoutY="10.0" onMouseClicked="#handlerHome" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
                             <image>
-                                <Image url="@../image/baseline_home_white_48dp.png" />
+                                <Image url="@../image/baseline_widgets_white_48dp.png" />
                             </image>
                         </ImageView>
                     </children>
