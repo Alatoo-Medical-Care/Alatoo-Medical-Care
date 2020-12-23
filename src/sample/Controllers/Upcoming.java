@@ -1,4 +1,4 @@
-package sample;
+package sample.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,7 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class AddPatient {
+public class Upcoming {
 
     @FXML
     private ResourceBundle resources;
@@ -60,7 +60,7 @@ public class AddPatient {
     void handlerPatient(MouseEvent event) {
         Parent root;
         try {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/add_Patient.fxml")), resources);
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/add_patient.fxml")), resources);
             Stage stage = new Stage();
             stage.setTitle("Add Patient");
             stage.setScene(new Scene(root));
