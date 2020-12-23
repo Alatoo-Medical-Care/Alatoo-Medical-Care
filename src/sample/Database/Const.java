@@ -17,6 +17,7 @@ public class Const {
     public static final String PATIENT_DISEASE = "disease";
     public static final String PATIENT_TIME = "time";
 
+    public static final String IDS_UPCOMING = "idupcoming";
     public static final String UPCOMING_ID = "studentID";
     public static final String UPCOMING_NAME = "name";
     public static final String UPCOMING_SURNAME = "surname";

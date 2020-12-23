@@ -2,6 +2,9 @@ package sample.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Objects;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -10,10 +13,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import sample.Database.DatabaseHandler;
 
 public class Home {
 
@@ -52,6 +57,12 @@ public class Home {
 
     @FXML
     private Button upcomingBtn;
+
+    @FXML
+    private Label countHistory;
+
+    @FXML
+    private Label countUpcoming;
 
     @FXML
     void handleHistory(MouseEvent event) {
@@ -111,6 +122,10 @@ public class Home {
 
     @FXML
     void initialize() {
+       DatabaseHandler databaseHandler = new DatabaseHandler();
+       countHistory.setText(databaseHandler.countPatient());
+       countUpcoming.setText(databaseHandler.coUpcoming());
+
         historyBtn.setOnAction(actionEvent -> {
             Parent root;
             try {

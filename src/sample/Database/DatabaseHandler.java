@@ -79,4 +79,36 @@ public class DatabaseHandler extends Configs{
         }
         return resultSet;
     }
+    public String countPatient(){
+        Statement stmt = null;
+        int count = 0;
+        try {
+            stmt = getDbConnection().createStatement();
+            String query = "select count(*) from patients";
+            ResultSet rs = stmt.executeQuery(query);
+            rs.next();
+            count = rs.getInt(1);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return Integer.toString(count);
+    }
+    public String coUpcoming(){
+        Statement stmt = null;
+        int count = 0;
+        try {
+            stmt = getDbConnection().createStatement();
+            String query = "select count(*) from upcoming";
+            ResultSet rs = stmt.executeQuery(query);
+            rs.next();
+            count = rs.getInt(1);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return Integer.toString(count);
+    }
 }

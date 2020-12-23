@@ -41,9 +41,11 @@ public class AddUpcoming {
         upcomingBtn.setOnAction(actionEvent -> {
             ArrayList<String> student_id = new ArrayList<>();
             student_id.add("18010100069");
+            student_id.add("18010100018");
 
             List<Student> data = new ArrayList<>();
             data.add(new Student("18010100069", "Askhat", "Shailoobekov", "19.03.2000", "com-18", "0777860987", "", ""));
+            data.add(new Student("18010100018", "Maksatbek", "Kanybekuulu", "06.06.2000", "com-18", "0777776688", "", ""));
             String id = upcomingID.getText().trim();
             if(student_id.contains(id)) {
                 int pos = student_id.indexOf(id);

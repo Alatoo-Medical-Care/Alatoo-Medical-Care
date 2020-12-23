@@ -42,7 +42,6 @@ public class Upcoming implements Initializable {
             stage.setScene(new Scene(root));
             stage.show();
             ((Node)(event.getSource())).getScene().getWindow();
-            System.out.println(tableUpc.getSelectionModel().getSelectedItem());
         }
         catch (IOException e) {
             e.printStackTrace();
