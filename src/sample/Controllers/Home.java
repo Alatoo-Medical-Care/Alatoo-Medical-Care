@@ -1,4 +1,4 @@
-package sample;
+package sample.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -111,7 +111,47 @@ public class Home {
 
     @FXML
     void initialize() {
-        //homeImg =  new ImageView(new Image(getClass().getResourceAsStream("image/baseline_add_task_white_48dp2.png")));
-
+        historyBtn.setOnAction(actionEvent -> {
+            Parent root;
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/history.fxml")), resources);
+                Stage stage = new Stage();
+                stage.setTitle("History");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        addPatientBtn.setOnAction(actionEvent -> {
+            Parent root;
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/add_patient.fxml")), resources);
+                Stage stage = new Stage();
+                stage.setTitle("Add Patient");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        upcomingBtn.setOnAction(actionEvent -> {
+            Parent root;
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("sample/view/upcoming.fxml")), resources);
+                Stage stage = new Stage();
+                stage.setTitle("Upcoming");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
