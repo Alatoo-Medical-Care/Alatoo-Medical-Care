@@ -39,6 +39,11 @@ Bonus points for:
     mentioning University (All app is about Uni then +20 pts, if text or logo or photo +5pts) ✅
     write a tutorial (how to create your app) + 20pts ❎
 
+We create JAR. file, you can execute. It is inside "out/artifacts/AlatooMedicalCare_jar"
+
+For linux System this command help you to execute => java --module-path /home/askhat/Documents/javafx-sdk-11.0.2/lib/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar JavaFX-OOP.jar
+
+Change /home/askhat/Documents/javafx-sdk-11.0.2/lib/ ==> Path to your javafx lib. and don't forget change to JavaFX-OOP.jar layed directory.
 
 
 Login: admin || Password: alatoo123
