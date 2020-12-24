@@ -1,7 +1,9 @@
 # Alatoo Medical Care
 Team members: Askhat Shailoobekov, Maksatbek Kanybekuulu
 
-Login: admin Password: alatoo123
+Presenting with YouTube: https://youtu.be/9T2aNCDsqeU
+
+Login: admin || Password: alatoo123
 
 <img src="https://user-images.githubusercontent.com/49748480/103016470-46b53f80-456c-11eb-999c-e30803216d8b.png" width="720" height="480" />
 
