@@ -5,6 +5,12 @@ Presenting with YouTube: https://youtu.be/9T2aNCDsqeU
 
 Login: admin || Password: alatoo123
 
+We create JAR. file, you can execute. It is inside "out/artifacts/AlatooMedicalCare_jar"
+
+For linux System this command help you to execute => java --module-path /home/askhat/Documents/javafx-sdk-11.0.2/lib/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.web -jar JavaFX-OOP.jar
+
+Change /home/askhat/Documents/javafx-sdk-11.0.2/lib/ ==> Path to your javafx lib. and don't forget change JavaFX-OOP.jar layed directory. 
+
 <img src="https://user-images.githubusercontent.com/49748480/103016470-46b53f80-456c-11eb-999c-e30803216d8b.png" width="720" height="480" />
 
 <img src="https://user-images.githubusercontent.com/49748480/103016507-5896e280-456c-11eb-82b6-7ad9b47d8226.png" width="885" height="480" />
